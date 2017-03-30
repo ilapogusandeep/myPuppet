@@ -1,0 +1,9 @@
+MCollective
+
+
+mco puppet runonce --nodes tomcat_servers.txt
+mco ping -F nmi_environment=stg
+mco puppet disable --nodes tomcat_servers.txt
+mco service status tomcat --nodes tomcat_servers.txt
+mco puppet enable --nodes tomcat_servers.txt
+

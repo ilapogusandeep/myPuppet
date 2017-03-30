@@ -1,0 +1,500 @@
+  271  cd ..
+  272  pwd
+  273  tar czvf control-repo-updated.tgz control-repo/
+  274  ll
+  275  cd control-repo
+  276  git checkout development 
+  277  ll
+  278  vi site/profiles/manifests/axis.pp
+  279  git add  site/profiles/manifests/axis.pp
+  280  git status
+  281  git commit -m "Replaced Hieralookup with arguments for latest bu"
+  282  git status
+  283  git log
+  284  clear
+  285  git push sandeep development 
+  286  git push sandeep development git log
+  287  git log
+  288  git push sandeep development 
+  289  vi site/profiles/manifests/axis.pp
+  290  git reset --hard HEAD~1
+  291  vi site/profiles/manifests/axis.pp
+  292  git commit -a -m "Changing the Axis Hiera lookup into Axis Parameters"
+  293  git push sandeep development -f
+  294  git pull 
+  295  git pull origin development 
+  296  git push sandeep development 
+  297  pwd
+  298  cd ../
+  299  pwd
+  300  tar czvf control-repo-Latest.tgz control-repo
+  301  cd control-repo
+  302  git remote add master siadmin@10.1.160.53:control-repo
+  303  git remote update
+  304  git push master development 
+  305  git push master development 
+  306  git push master development 
+  307  pwd
+  308  cd ../
+  309  tar xzvf ~/Desktop/legacymodules.tgz 
+  310  ll
+  311  mv opt/repos/legacymodules legacymodules
+  312  rm -rf opt/
+  313  ll
+  314  cd legacymodules/
+  315  ll
+  316  ls
+  317  ls ../control-repo/.git
+  318  cd ..
+  319  mv legacymodules/ legacymodules.git
+  320  ll
+  321  git clone legacymodules.git/ legacymodules
+  322  cd legacymodules
+  323  ls
+  324  git remote -v
+  325  git remote set-url origin ssh://git@10.10.92.131:7999/ppt/legacymodules.git
+  326  git remote -v
+  327  git push origin master
+  328  git push origin master
+  329  cd ../control-repo/c
+  330  cd ../control-repo/
+  331  ll
+  332  git remote update
+  333  git rebase origin/development 
+  334  git checkout -b legacymodules
+  335  vi Puppetfile 
+  336  git commit -a -m "Moved legacymodules to Bitbucket"
+  337  git push sandeep legacymodules 
+  338  history 
+  339  clear
+  340  history 
+  341  git checkout development 
+  342  tar -xzvf ~/Desktop/axis_app.tgz 
+  343  ll
+  344  git show
+  345  git status
+  346  git diff hiera.yaml
+  347  cd hieradata/nmi_role/
+  348  ll
+  349  cat batchprocess.yaml 
+  350  cat losservice.yaml 
+  351  cd ..
+  352  ll
+  353  cd ..
+  354  cat site/profiles/manifests/axis.pp
+  355  cat site/profiles/manifests/axis/axis_app.pp 
+  356  less site/profiles/manifests/axis/axis_app.pp 
+  357  cat hiera.yaml 
+  358  cd hieradata/nmi_role/
+  359  ll
+  360  less *
+  361  less *
+  362  less *
+  363* 
+  364  less ../../site/profiles/manifests/axis/axis_app.pp 
+  365  less *
+  366  less rules-server.yaml 
+  367  pwd
+  368  cd ../../
+  369  ll
+  370  git status
+  371  git add .
+  372  git status
+  373  git commit -m 
+  374  git commit
+  375  git push sandeep
+  376  vi .git/config 
+  377  git push sandeep
+  378  git fetch
+  379  git push sandeep
+  380  git rebase origin/development 
+  381  git push -f sandeep
+  382  pwd
+  383  less manifests/site.pp
+  384  cat site/profiles/manifests/axis/axis_app.pp 
+  385  less site/profiles/manifests/axis/axis_app.pp 
+  386  vi site/profiles/manifests/axis/axis_app.pp 
+  387  git add .
+  388  git status
+  389  git commit
+  390  git push sandeep
+  391  git fetch
+  392  git push sandeep
+  393  git rebase origin/development 
+  394  git push -f sandeep development 
+  395  less site/profiles/manifests/axis/axis_app.pp 
+  396  vi site/profiles/manifests/axis/axis_app.pp 
+  397  git add .
+  398  git status
+  399  git commit 
+  400  git push sandeep development 
+  401  git fetch
+  402  git rebase origin/development 
+  403  git push sandeep development 
+  404  git status
+  405  git diff 
+  406  git fetch
+  407  git fetch
+  408  git rebase origin/development 
+  409  git status
+  410  git commit
+  411  git commit -a 
+  412  git push origin
+  413  git push origin development 
+  414  git rebase origin/development 
+  415  git push origin development 
+  416  vi site/profiles/manifests/puppet/agent.pp 
+  417  git commit -a 
+  418  git push origin development
+  419  vi site/profiles/manifests/puppet/agent.pp 
+  420  vi site/profiles/manifests/puppet/agent.pp 
+  421  git commit -a 
+  422  git push origin development 
+  423  vi site/profiles/manifests/puppet/agent.pp 
+  424  git commit -a
+  425  git push origin development 
+  426  vi site/profiles/manifests/puppet/agent.pp 
+  427  git commit -a
+  428  git push origin development 
+  429  vi site/profiles/manifests/puppet/agent.pp 
+  430  vi ~/.vimrc
+  431  vi site/profiles/manifests/puppet/agent.pp 
+  432  git commit -a
+  433  git push origin development 
+  434  vi site/profiles/manifests/puppet/agent.pp 
+  435  git commit -a
+  436  git push origin development 
+  437  git fetch 
+  438  git fetch 
+  439  git rebase origin/qa
+  440  vi site/profiles/manifests/puppet/agent.pp 
+  441  git commit -a
+  442  git push origin development 
+  443  git push origin qa
+  444  git checkout qa
+  445  git rebase development
+  446  git push origin 
+  447  vi site/profiles/manifests/puppet/agent.pp 
+  448  git checkout development 
+  449  git commit -a
+  450  git push origin development 
+  451  git checkout qa
+  452  git rebase development 
+  453  git push origin qa
+  454  git checkout development 
+  455  git rebase
+  456  git rebase origin/development 
+  457  vi Puppetfile 
+  458  vi site/profiles/manifests/puppet/master.pp 
+  459  git status
+  460  git add .
+  461  git commit -a
+  462  git push origin development 
+  463  vi Puppetfile 
+  464  git commit -a
+  465  git push origin development 
+  466  vi Puppetfile 
+  467  vi site/profiles/manifests/puppet/master.pp 
+  468  git rm hiera.yaml 
+  469  git status
+  470  git add Puppetfile site
+  471  git status
+  472  git commit -a
+  473  git push origin development 
+  474  git checkout qa
+  475  git rebase development 
+  476  git push origin qa
+  477  git commit --allow-empty -m "Bitbucket Hook test"
+  478  git push origin qa
+  479  git commit --allow-empty -m "Bitbucket Hook test"
+  480  git push origin qa
+  481  git commit --allow-empty -m "Bitbucket Hook test"
+  482  git push origin qa
+  483  git commit --allow-empty -m "Bitbucket Hook test" && git push origin qa
+  484  git commit --allow-empty -m "Bitbucket Hook test" && git push origin qa
+  485  git commit --allow-empty -m "Bitbucket Hook test" && git push origin qa
+  486  git commit --allow-empty -m "Bitbucket Hook test" && git push origin qa
+  487  git commit --allow-empty -m "Bitbucket Hook test" && git push origin qa
+  488  git log
+  489  git reset e1f97c372310146f89ea59f7776bb32cab385eb4
+  490  git push -f
+  491  git checkout development
+  492  git status
+  493  git log
+  494  git commit --allow-empty -m "Bitbucket Hook test" && git push origin qa
+  495  git commit --allow-empty -m "Bitbucket Hook test" && git push origin development
+  496  git commit --allow-empty -m "Bitbucket Hook test" && git push origin development
+  497  git commit --allow-empty -m "Bitbucket Hook test" && git push origin development
+  498  git log
+  499  git reset e1f97c372310146f89ea59f7776bb32cab385eb4
+  500  git push origin development -f
+  501  git checkout production
+  502  vi Puppetfile 
+  503  git commit -a
+  504  git push origin production 
+  505  vi site/profiles/manifests/puppet/master.pp 
+  506  git checkout -- .
+  507  git checkout development 
+  508  vi site/profiles/manifests/puppet/master.pp 
+  509  git rebase qa
+  510  git status
+  511  git commit -a 
+  512  git push origin development 
+  513  git checkout qa
+  514  git rebase development
+  515  git push origin qa
+  516  history > ~/Desktop/git-commands.txt
+  517  clear
+  518  cd ~/Desktop/
+  519  cd ~/src/
+  520  tar zxvf ~/Desktop/axis_svn_mirror.tgz .
+  521  tar zxvf ~/Desktop/axis_svn_mirror.tgz 
+  522  cd axis_svn_mirror/
+  523  git config 
+  524  git config -l 
+  525  git remote add origin ssh://git@10.10.92.131:7999/ppt/axis_svn_mirror.git
+  526  git push origin master
+  527  cd ../control-repo
+  528  git checkout development 
+  529  cd ../axis_svn_mirror/
+  530  git tag "0.0.1"
+  531  git push -u
+  532  git push -u origin master
+  533  git push --tags
+  534  cd ../control-repo
+  535  vi Puppetfile 
+  536  vi site/profiles/manifests/puppet/master.pp 
+  537  git status
+  538  git commit -a
+  539  git push origin development
+  540  cd ../axis_svn_mirror/
+  541  vi manifests/init.pp 
+  542  vi manifests/params.pp 
+  543  git commit -a
+  544  git tag '0.0.2'
+  545  git push --tags
+  546  cd ../control-repo
+  547  vi Puppetfile 
+  548  git commit -a -m "Update SVN Mirror version to 0.0.2"
+  549  git push origin development 
+  550  cd ../axis_svn_mirror/
+  551  vi manifests/init.pp 
+  552  git commit -a -m "Change the crontab arguments, version 0.0.3"
+  553  git tag '0.0.3'
+  554  git push --tags
+  555  git tag
+  556  cd ../control-repo
+  557  vi Puppetfile 
+  558  git commit -a -m "Update axis_svn_mirror"
+  559  git push origin development 
+  560  vi site/profiles/manifests/axis/axis_app.pp 
+  561  git commit -a -m "Change svn source url"
+  562  git push origin development 
+  563  vi site/profiles/manifests/axis/axis_app.pp 
+  564  vi hieradata/environments/dev.yaml 
+  565  git commit -a -m "Update dev svn mirror url"
+  566  git push origin development 
+  567  git push origin development 
+  568  vi site/profiles/manifests/axis/axis_app.pp 
+  569  vi hieradata/environments/dev.yaml 
+  570  git commit -a -m "Update SVN port number"
+  571  git push origin development 
+  572  cd ~/src/legacymodules
+  573  cd ../
+  574  tar xzvf ~/Desktop/legacymodules.tgz 
+  575  cd legacymodules
+  576  git status
+  577  cat test
+  578  rm test
+  579  ls alfadmin/test/
+  580  cat alfadmin/test/init.pp 
+  581  grep -r motd.local motd/manifests/
+  582  rm motd/files/motd.local 
+  583  rm alfadmin/manifests/init.pp.local 
+  584  git status
+  585  git add .
+  586  git config -l
+  587  git commit -a -m "Sync with latest production"
+  588  git tag '1.0.0'
+  589  git push --tags
+  590  cd ../control-repo
+  591  git checkout production 
+  592  cd ..
+  593  tar xzvf ~/Desktop/control-repo-20170315.tgz 
+  594  rsync
+  595  mv control-repo-production/* control-repo/
+  596  cp -rf control-repo-production/* control-repo/
+  597  cd control-repo
+  598  git status
+  599  git add .
+  600  git status
+  601  git commit -m "Production Sync 2017-03-15"
+  602  git push origin production 
+  603  vi Puppetfile 
+  604  git commit -a -m "Get Legacy Modules from Bitbucket with Tag 1.0.0"
+  605  git push origin production 
+  606  git push origin :master
+  607  git push origin :staging
+  608  vi manifests/site.pp
+  609  git commit -a -m "Change File Bucket to servername"
+  610  git push origin production
+  611  cd ../axis_svn_mirror/
+  612  vi templates/svnserve_sysconfig.erb 
+  613  git commit -a -m "Fix typo in template"
+  614  git tag
+  615  git tag '0.0.4'
+  616  git push --tags
+  617  cd ../control-repo
+  618  vi Puppetfile 
+  619  vi .git/config 
+  620  git branch -D master
+  621  git branch -D staging
+  622  vi .git/config 
+  623  vi .git/config 
+  624  git checkout development 
+  625  vi Puppetfile 
+  626  git commit -a -m "Update axis_svn_mirror version 0.0.4"
+  627  git push origin development
+  628  less site/profiles/manifests/axis.pp
+  629  git checkout qa
+  630  git rebase development
+  631  git push origin qa
+  632  cd hieradata/
+  633  cp environments/dev.yaml nodes/clone-axis-01.nmih.remote.binc.net.yaml
+  634  vi nodes/clone-axis-01.nmih.remote.binc.net.yaml 
+  635  git checkout development
+  636  git commit -a -m "Test node overrides"
+  637  git add .
+  638  git commit -a -m "Test node overrides"
+  639  git push origin development
+  640  cat ../Puppetfile 
+  641  vi ../Puppetfile 
+  642  cd ../
+  643  git commit -a -m "Update vcsrepo 1.5.0"
+  644  git push origin development
+  645  vi site/profiles/manifests/axis/axis_app.pp 
+  646  git checkout -- site/profiles/manifests/axis/axis_app.pp
+  647  vi site/profiles/manifests/axis/axis_app.pp 
+  648  git commit -a -m "Fix Vcsrepo "
+  649  git push origin development
+  650  cat site/profiles/manifests/axis.pp
+  651  cat hieradata/nmi_role/sso.yaml 
+  652  cat hieradata/nmi_role/origination.yaml 
+  653  vi hieradata/nmi_role/sso.yaml 
+  654  vi hieradata/nmi_role/sso.yaml 
+  655  git commit -a -m "Update svn source and target for sso"
+  656  git push origin development 
+  657  vi hieradata/nodes/clone-axis-01.nmih.remote.binc.net.yaml 
+  658  vi hieradata/environments/dev.yaml 
+  659  git commit -a -m "Remove trailing / from svn_mirror in hiera"
+  660  git push origin development
+  661  git checkout -b staging
+  662  git push -u origin staging
+  663  git checkout development
+  664  vi hieradata/environments/{ci,pss,stg}.yaml
+  665  git status
+  666  git commit -a -m "Update svn mirror for staging"
+  667  git push origin development
+  668  git checkout staging
+  669  git rebase development
+  670  git push origin staging
+  671  git checkout qa
+  672  git rebase development
+  673  git push origin qa
+  674  less site/profiles/manifests/axis/axis_app.pp 
+  675  history > ~/Desktop/git-commands.txt
+  676  git checkout development
+  677  vi Puppetfile 
+  678  cd ../legacymodules
+  679  git tag
+  680  git checkout development
+  681  cd ../control-repo
+  682  clear
+  683  vi Puppetfile 
+  684  git status
+  685  git diff
+  686  10.10.89.122 msp-lin-drls-05 - Staging
+  687  git commit -a -m "Update Tag 1.0.0 on Legacymodules"
+  688  git push origin development
+  689  git checkout qa
+  690  git rebase qa development
+  691  git checkout qa
+  692  git rebase development
+  693  cat Puppetfile 
+  694  git push origin qa
+  695  git checkout staging
+  696  git rebase development
+  697  git push origin staging
+  698  git checkout development
+  699  vi site/profiles/manifests/axis/axis_app.pp 
+  700  git commit -a -m "Install svn package"
+  701  git push origin development
+  702  vi Puppetfile 
+  703  git commit -a -m "Fix type for Puppetfile"
+  704  git push origin development
+  705  cd ../legacymodules
+  706  git log
+  707  git checkout ce69b92e0a888c20ed44dcc8b6f579de6499845a
+  708  git tag 'old'
+  709  git push --tags
+  710  cd ../control-repo
+  711  vi Puppetfile 
+  712  vi manifests/site.pp
+  713  git commit -a -m "Dont Manage legacymodules admins in FIT/STG/CI/PSS"
+  714  git push origin development
+  715  git push origin qa
+  716  git checkout qa
+  717  git rebase development
+  718  git checkout staging 
+  719  git rebase development
+  720  git push origin staging
+  721  cat Puppetfile 
+  722  git checkout development
+  723  vi hieradata/environments/dev.yaml 
+  724  grep -r svn_url hieradata/
+  725  cd hieradata/environments/
+  726  find . -name \*.yaml -exec sed -i 's/http:\/\/10.20.89.53:3690/svn:\/\/10.20.89.53:3690/
+  727  find . -name \*.yaml -exec sed -i 's/http:\/\/10.20.89.53:3690/svn:\/\/10.20.89.53:3690/' {} \;
+  728  git status
+  729  git diff
+  730  git commit -a -m" Fixed staging urls"
+  731  git push origin development
+  732  git checkout qa
+  733  git rebase development
+  734  git checkout staging
+  735  git rebase qa
+  736  git push origin staging
+  737  git checkout development
+  738  cd ../../
+  739  cd site/profiles/manifests/axis/axis_app.pp 
+  740  vi site/profiles/manifests/axis/axis_app.pp 
+  741  gs
+  742  git status
+  743  git diff
+  744  vi site/profiles/manifests/axis/axis_app.pp 
+  745  git diff
+  746  git add site/profiles/manifests/axis/axis_app.pp 
+  747  git commit
+  748  git push origin development
+  749  git checkout qa && git rebase development && git push origin qa && git checkout staging && git rebase development && git push origin staging
+  750  ls
+  751  git checkout development 
+  752  git push sandeep development 
+  753  less site/profiles/manifests/axis/axis_app.pp 
+  754  cd ../legacymodules
+  755  cat admins/manifests/init.pp
+  756  less admins/manifests/init.pp
+  757  cd audit/files/
+  758  ll
+  759  cat syslog.conf 
+  760  cat rsyslog.conf 
+  761  cd ../../../control-repo/manifests/
+  762  less site.pp
+  763  git checkout production
+  764  less site.pp
+  765  cd ../../
+  766  cd legacymodules
+  767  git tags
+  768  git tag
+  769  history 
+  770  history > ~/Desktop/git-History.txt

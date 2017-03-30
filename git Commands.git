@@ -1,0 +1,19 @@
+git config --global user.name "Sandeep Ilapogu"
+git config --global user.email "sandeep.ilapogu@nationalmi.com"
+ssh-keygen.exe
+cat .ssh/id_rsa.pub
+git checkout -- .
+git status
+git config core.filemode
+git remote add ssh://git@10.10.92.131:7999/~siadmin/control-repo.git
+git remote add origin ssh://git@10.10.92.131:7999/~siadmin/control-repo.git
+git remote -v
+vim .git/config
+git remote -v
+git push origin master
+git checkout master
+git checkout dev-merge 
+git push origin dev-merge 
+git checkout -b staging
+git branch -D dev-merge
+git rebase --abort

@@ -1,65 +1,3 @@
-# Class profiles::axis::axis_app
-#
-# This class can manage any arbitrary NationalMI Axis application deployment. It
-# should be used in place of any profiles::axis::* classes.
-#
-# Currently, the list of usable applications is hard coded below as part of the
-# $allowed_roles variable.
-#
-# For most applications the default parameters should be enough, with the
-# exceptions of $release, $build, and $config_version, which must always be
-# specified. Applications with unusual naming conventions will need to specify
-# the $role, $war_name, $component, or $war_home parameters.
-#
-# Example:
-#
-#  # Declaring the ratefinder app as a parameterized class
-#  class { 'profiles::axis::axis_app':
-#    release        => 'Rel8.2',
-#    build          => '8.2.0.9',
-#    config_version => '647',
-#    role           => 'ratefinder',
-#    component      => 'erq',
-#    war_home       => '/usr/share/apache-tomcat/webapps/NMISync',
-#    war_name       => 'NMISync',
-#  }
-#
-#  # Declaring the scheduler app as a parameterized class
-#  class { 'profiles::axis::axis_app':
-#    release        => 'Rel8.2',
-#    build          => '8.2.0.9',
-#    config_version => '647',
-#  }
-#
-#  # Declaring the origination app as a parameterized class
-#  class { 'profiles::axis::axis_app':
-#    release        => 'Rel8.2',
-#    build          => '8.2.0.9',
-#    config_version => '647',
-#    axis_svn_src   => 'origination/axis-o',
-#    axis_svn_tgt   => 'origination/conf/axis-o',
-#  }
-#
-# @param release [String] The Axis release version, e.g., "Rel8.2"
-# @param build [String] The Axis release build, e.g., "8.2.0.9"
-# @param config_version [String] The Axis SVN config revision, e.g., "642"
-# @param axis_home [String] The default location for Axis applications. Defaults to /opt/axis
-# @param war_home [String] The location to copy application WAR files to.
-# @param role
-# @param war_name
-# @param component
-# @param manage_logs [Boolean] Whether or not to manage the permissions on Axis log files
-# @param owner [String] The UID of the owner of Axis files
-# @param group [String] The GID of the owner of Axis files
-# @param svn_url [String] The base URL for the Axis Subversion server with config files
-# @param log_dir [String] The location for Axis log files
-# @param axis_svn_src [String] The path within the SVN repo to find config files
-# @param axis_svn_tgt [String] The path below $axis_home to place app-specific SVN configs
-# @param war_source [String] Alternative path within the source to get war files (include .war)
-#
-# Created by James Sweeny <james.sweeny@puppet.com> for NationalMI
-# March 2017
-#
 class profiles::axis::axis_app (
   Pattern[/^Rel[0-9\.]+$/] $release,
   Pattern[/([0-9]\.?){4}/] $build,
@@ -173,7 +111,7 @@ class profiles::axis::axis_app (
     force    => true,
     require  => Package['svn'],
   }
-  
+
   package {"svn":
     ensure => present,
   }
@@ -192,3 +130,4 @@ class profiles::axis::axis_app (
   }
 
 }
+
