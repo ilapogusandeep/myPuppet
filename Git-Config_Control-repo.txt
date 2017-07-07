@@ -1,0 +1,53 @@
+
+/etc/puppetlabs/code/environment/master
+[root@msp-lin-pups-02 master]# cat .git/config
+[core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+[remote "origin"]
+        url = /opt/repos/control-repo
+        fetch = +refs/heads/*:refs/remotes/origin/*
+
+/etc/puppetlabs/code/environment/production/		
+[root@msp-lin-pups-02 environments]# cat production/.git/config
+[core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+[remote "origin"]
+        fetch = +refs/heads/*:refs/remotes/origin/*
+        url = /opt/repos/control-repo
+[branch "master"]
+        remote = origin
+        merge = refs/heads/master
+[remote "cache"]
+        url = /opt/puppetlabs/server/data/puppetserver/r10k/-opt-repos-control-repo
+        fetch = +refs/heads/*:refs/remotes/cache/*
+
+/var/tmp/modules
+[root@dev-lin-pups-02 modules]# cat .git/config
+[core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+[remote "origin"]
+        url = /opt/repos/legacymodules
+        fetch = +refs/heads/*:refs/remotes/origin/*
+
+/var/tmp/control-repo/control-repo-production/		
+[root@dev-lin-pups-02 tmp]# cat control-repo/control-repo-production/.git/config
+[core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+[remote "origin"]
+        url = /opt/repos/control-repo
+        fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+        remote = origin
+        merge = refs/heads/master
