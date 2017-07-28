@@ -1,0 +1,75 @@
+Puppetize:
+**- Nexus - AXIS
+**- Nexus - Notification
+**- BRMS Deployment
+- Alfresco deployment
+** New Relic 
+ **--> Axis
+ **--> Alfresco
+ **--> Mysql
+ --> B2b
+DB Scripts Copy
+- Upgrade apache-tomcat
+- Tripwire
+- yum
+- ssh
+- fstab
+- java heap_size
+- tomcat -ratefinder-2processes.allow
+- cache deployment
+- Rel7
+- iptables
+
+
+- BRMS Deployment
+--> Puppet agent conf's
+- site.pp refactor - search for non-match certname and include rest of the nodes and group them accordingly
+- Link AD with puppet
+--> Service -- tomcat
+- ALfresco - Send him the script
+- BRMS - I've to create regex
+^BRMS-[0-9]*-[0-9\.]*
+^BRMS-([0-9]){4}-([0-9]*){2}.([0-9])
+--> SVN servers 
+--> Nexus 
+--> CI/CD 
+--> Prod Code Update
+- Manage Modules - Expected to get list of things to do.
+- Env. Specific Sudo/ssh/* - getting things from james
+--> Add Servers- Cache/Notification
+--> Note: No Internet on Nodes - Thats fine
+--> Console Time Zone
+--> License Key Update
+-MCollective Scripts - Expected during documentation
+--> Corrective Changes
+- Legacy modules/admins in Prod - Remove if unused.
+
+
+X-Upgrade tomcat 
+X- download tar
+X- unzip
+- sign certificates -- copy from old
+- server.xml --> take from old server.xml --> rolename
+X- setenv.sh --> copy from old apcahe-tomcat
+X- ROOT - index.html
+X- clear -webapps
+X- service tomcat upgrade --> init.d
+X- Axis profiles..
+X--> java pointing to latest
+X /usr/bin/test -f ${newrelic_jar_path}"
+00000020378045409
+
+
+NMI_ERA
+GC7erm!T/5zqy.q
+nationalmi 
+2017neXus! 
+nmih_admin
+7S66C413l55Vp17
+National!2017
+admin - nexus
+NrM94/608#nmi
+svc_jenkins
+Nmi.Dec#2017.nxS$
+svc_bitbucket
+!Bucket2017
