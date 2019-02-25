@@ -1,3 +1,0 @@
-%s/asd/asdf/gc
-
-find . -name \*properties -type f -exec grep -Haxnv ".*" {} \;
